@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+**** HighScoreListFragment Layout File
+**** @author rahulthakur
+-->
+<thakur.rahul.colourmemory.view.CustomRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/purple_haze"
+	android:clickable="true"
+	android:soundEffectsEnabled="false" >
+
+	<TextView
+		android:id="@+id/header"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="@dimen/medium_gap"
+		android:background="@color/sad_yellow"
+		android:gravity="center"
+		android:text="@string/high_scores"
+		android:textColor="@color/dirty_chocolate"
+		android:textSize="@dimen/large_text"
+		android:textStyle="bold|italic" />
+
+	<ListView
+		android:id="@android:id/list"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/header"
+		android:listSelector="@android:color/transparent"
+		android:soundEffectsEnabled="false" />
+
+</thakur.rahul.colourmemory.view.CustomRelativeLayout>

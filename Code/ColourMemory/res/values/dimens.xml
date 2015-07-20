@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+**** Dimension Values
+**** @author rahulthakur
+-->
+<resources>
+
+    <dimen name="grid_gap">2dp</dimen>
+    <dimen name="small_gap">10dp</dimen>
+    <dimen name="medium_gap">25dp</dimen>
+    <dimen name="big_gap">50dp</dimen>
+
+    <!-- TEXT -->
+    <dimen name="large_text">25sp</dimen>
+    <dimen name="medium_text">15sp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+</resources>

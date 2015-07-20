@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+**** GameBoardActivity Layout File
+**** @author rahulthakur
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/orange_tang" >
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical" >
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="@dimen/small_gap" >
+
+			<ImageView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignBottom="@+id/midLayout"
+				android:layout_alignParentLeft="true"
+				android:layout_alignParentTop="true"
+				android:contentDescription="@string/app_name"
+				android:src="@drawable/logo" />
+
+			<!-- Button
+				android:id="@+id/currentScoreButton"
+				style="@style/buttonStyle"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentTop="true"
+				android:layout_centerHorizontal="true"
+				android:layout_marginLeft="@dimen/medium_gap"
+				android:layout_marginRight="@dimen/medium_gap"
+				android:background="@drawable/red_button"
+				android:clickable="false"
+				android:text="@string/current_score"/-->
+			
+			<LinearLayout
+			    android:id="@+id/midLayout"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_alignParentTop="true"
+			    android:layout_centerHorizontal="true">
+			    
+				<Button
+					android:id="@+id/currentScoreButton"
+					style="@style/buttonStyle"
+					android:background="@drawable/red_button"
+					
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:clickable="false"
+					android:text="@string/current_score"/>
+			
+				<Button
+					android:id="@+id/timerButton"
+					style="@style/buttonStyle"
+					
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:background="@drawable/red_button"
+					android:clickable="false"
+					android:text="@string/time_left" />
+				
+			</LinearLayout>
+			
+			<Button
+				android:id="@+id/scoresButton"
+				style="@style/buttonStyle"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentRight="true"
+				android:layout_alignParentTop="true"
+				android:background="@drawable/beige_button"
+				android:onClick="showScores"
+				android:text="@string/scores_button" />
+		</RelativeLayout>
+
+		<FrameLayout
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_margin="@dimen/small_gap" >
+
+			<include
+				android:id="@+id/grid0"
+				layout="@layout/include_grid_0" />
+
+			<include
+				android:id="@+id/grid1"
+				layout="@layout/include_grid_1" />
+		</FrameLayout>
+	</LinearLayout>
+
+	<FrameLayout
+		android:id="@+id/fragment_container_high_score_list_gameboard"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent" />
+
+	<FrameLayout
+		android:id="@+id/fragment_container_new_high_score"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerInParent="true" />
+
+</RelativeLayout>

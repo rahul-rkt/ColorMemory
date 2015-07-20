@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+**** Grid_0 Layout File for all face down cards
+**** @author rahulthakur
+-->
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:stretchColumns="*" >
+
+	<TableRow
+		android:layout_margin="@dimen/grid_gap"
+		android:layout_weight="1"
+		android:gravity="center" >
+
+		<ImageView
+			android:id="@+id/R0C0_0"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:contentDescription="@string/card"
+			android:onClick="imageClick"
+			android:src="@drawable/card_bg" />
+
+		<ImageView
+			android:id="@+id/R0C1_0"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:contentDescription="@string/card"
+			android:onClick="imageClick"
+			android:src="@drawable/card_bg" />
+
+		<ImageView
+			android:id="@+id/R0C2_0"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:contentDescription="@string/card"
+			android:onClick="imageClick"
+			android:src="@drawable/card_bg" />
+
+		<ImageView
+			android:id="@+id/R0C3_0"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:contentDescription="@string/card"
+			android:onClick="imageClick"
+			android:src="@drawable/card_bg" />
+	</TableRow>
+
+	<TableRow
+		android:layout_margin="@dimen/grid_gap"
+		android:layout_weight="1"
+		android:gravity="center" >
+
+		<ImageView
+			android:id="@+id/R1C0_0"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:contentDescription="@string/card"
+			android:onClick="imageClick"
+			android:src="@drawable/card_bg" />
+
+		<ImageView
+			android:id="@+id/R1C1_0"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:contentDescription="@string/card"
+			android:onClick="imageClick"
+			android:src="@drawable/card_bg" />
+
+		<ImageView
+			android:id="@+id/R1C2_0"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:contentDescription="@string/card"
+			android:onClick="imageClick"
+			android:src="@drawable/card_bg" />
+
+		<ImageView
+			android:id="@+id/R1C3_0"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:contentDescription="@string/card"
+			android:onClick="imageClick"
+			android:src="@drawable/card_bg" />
+	</TableRow>
+
+	<TableRow
+		android:layout_margin="@dimen/grid_gap"
+		android:layout_weight="1"
+		android:gravity="center" >
+
+		<ImageView
+			android:id="@+id/R2C0_0"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:contentDescription="@string/card"
+			android:onClick="imageClick"
+			android:src="@drawable/card_bg" />
+
+		<ImageView
+			android:id="@+id/R2C1_0"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:contentDescription="@string/card"
+			android:onClick="imageClick"
+			android:src="@drawable/card_bg" />
+
+		<ImageView
+			android:id="@+id/R2C2_0"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:contentDescription="@string/card"
+			android:onClick="imageClick"
+			android:src="@drawable/card_bg" />
+
+		<ImageView
+			android:id="@+id/R2C3_0"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:contentDescription="@string/card"
+			android:onClick="imageClick"
+			android:src="@drawable/card_bg" />
+	</TableRow>
+
+	<TableRow
+		android:layout_margin="@dimen/grid_gap"
+		android:layout_weight="1"
+		android:gravity="center" >
+
+		<ImageView
+			android:id="@+id/R3C0_0"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:contentDescription="@string/card"
+			android:onClick="imageClick"
+			android:src="@drawable/card_bg" />
+
+		<ImageView
+			android:id="@+id/R3C1_0"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:contentDescription="@string/card"
+			android:onClick="imageClick"
+			android:src="@drawable/card_bg" />
+
+		<ImageView
+			android:id="@+id/R3C2_0"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:contentDescription="@string/card"
+			android:onClick="imageClick"
+			android:src="@drawable/card_bg" />
+
+		<ImageView
+			android:id="@+id/R3C3_0"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:contentDescription="@string/card"
+			android:onClick="imageClick"
+			android:src="@drawable/card_bg" />
+	</TableRow>
+
+</TableLayout>

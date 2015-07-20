@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+**** ListView items Layout File
+**** @author rahulthakur
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:padding="@dimen/medium_gap" >
+
+	<TextView
+		android:id="@+id/nameTextView"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:textColor="@color/orange_tang"
+		android:textStyle="italic" >
+	</TextView>
+
+	<TextView
+		android:id="@+id/scoreTextView"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentRight="true"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:textColor="@color/chilled_lime"
+		android:textStyle="bold" >
+	</TextView>
+
+</RelativeLayout>
