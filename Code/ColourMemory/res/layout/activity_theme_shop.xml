@@ -49,10 +49,10 @@
 				android:text="@string/green_theme"
 			    android:textSize="0dip" />
 			<Button 
-				android:id="@+id/s_digimon"
+				android:id="@+id/s_digimons"
 				android:layout_width="0dp"
 			    android:layout_weight="1" 
-			    android:background="@drawable/s_digimon_back"
+			    android:background="@drawable/s_digimons_back"
 				android:layout_height="181dp"
 				android:onClick="setTheme"
 				android:text="@string/digimon_theme"

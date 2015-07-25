@@ -42,7 +42,7 @@ public class ThemeModel {
 	private HashSet<String> unlockedThemes;
 	public static final String DEFAULT_THEME = "colour_";
 	public static final String RED_THEME = "red_";
-	public static final String DIGIMON_THEME = "s_digimon_";
+	public static final String DIGIMON_THEME = "s_digimons_";
 	public static final String GREEN_THEME = "green_";
 	private String theme;
 
