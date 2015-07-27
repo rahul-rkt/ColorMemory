@@ -11,6 +11,7 @@
     <string name="theme_shop_button">Theme Shop</string>
     <string name="scores_button">High Scores</string>
     <string name="exit_button">Quit</string>
+    <string name="reset_button">Reset Theme</string>
     <string name="current_score">0</string>
     <string name="time_left">0</string>
     <string name="card">Card</string>
@@ -26,6 +27,7 @@
     <string name="red_theme">red_</string>
     <string name="digimon_theme">s_digimons_</string>
     <string name="green_theme">green_</string>
+    <string name="silver_theme">silver_</string>
     
     <!-- COLOURS -->
     <color name="orange_tang">#E4844A</color>

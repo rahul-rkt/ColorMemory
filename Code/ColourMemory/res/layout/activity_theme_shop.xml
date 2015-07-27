@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/orange_tang"
+    android:background="@drawable/bg2"
     
     tools:context="thakur.rahul.colourmemory.ThemeShopActivity"
     android:id="@+id/theme_shop_main_layout" >
@@ -56,6 +56,15 @@
 				android:layout_height="181dp"
 				android:onClick="setTheme"
 				android:text="@string/digimon_theme"
+			    android:textSize="0dip"/> 
+		    <Button 
+				android:id="@+id/silver"
+				android:layout_width="0dp"
+			    android:layout_weight="1" 
+			    android:background="@drawable/silver_back"
+				android:layout_height="181dp"
+				android:onClick="setTheme"
+				android:text="@string/silver_theme"
 			    android:textSize="0dip"/> 
 		</LinearLayout>	
 	</LinearLayout>

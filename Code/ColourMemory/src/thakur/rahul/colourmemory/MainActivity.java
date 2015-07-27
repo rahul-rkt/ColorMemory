@@ -21,7 +21,8 @@ import android.view.View;
  * @author rahulthakur
  */
 public class MainActivity extends Activity {
-
+	private final boolean IS_DEBUG = true;
+	
 	private static volatile Context appContext;
 
 	/**
@@ -38,6 +39,9 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		appContext = this.getApplicationContext();
+		if( !IS_DEBUG ) {
+			(findViewById(R.id.resetButton)).setVisibility(android.view.View.GONE);
+		}
 	}
 
 	/**
@@ -84,5 +88,9 @@ public class MainActivity extends Activity {
 
 		finish();
 		System.exit(0);
+	}
+	
+	public void resetThemes(View v) {
+		ThemeModel.getInstance().resetThemes();
 	}
 }

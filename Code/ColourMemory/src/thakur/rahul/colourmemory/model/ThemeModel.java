@@ -32,6 +32,12 @@ public class ThemeModel {
 		}
 	}
 	
+	public void resetThemes() {
+		unlockedThemes = new HashSet<String>();
+		unlockedThemes.add(DEFAULT_THEME);
+		unlockedThemes.add(RED_THEME);
+		
+	}
 	public static ThemeModel getInstance() {
 		if(singleton == null) {
 			singleton = new ThemeModel();
@@ -39,15 +45,17 @@ public class ThemeModel {
 		return singleton;
 	}
 	
+	
 	private HashSet<String> unlockedThemes;
 	public static final String DEFAULT_THEME = "colour_";
 	public static final String RED_THEME = "red_";
 	public static final String DIGIMON_THEME = "s_digimons_";
 	public static final String GREEN_THEME = "green_";
+	public static final String SILVER_THEME = "silver_";
 	private String theme;
 
 	public String[] getAllThemes() {
-		return new String[] {DEFAULT_THEME, RED_THEME, DIGIMON_THEME, GREEN_THEME  };
+		return new String[] {DEFAULT_THEME, RED_THEME, DIGIMON_THEME, GREEN_THEME, SILVER_THEME  };
 	}
 	
 	public HashMap<String,String> getUnlockRequirements() {
@@ -55,8 +63,8 @@ public class ThemeModel {
 		toReturn.put( DEFAULT_THEME, "already unlocked at the beginning" );
 		toReturn.put( DEFAULT_THEME, "already unlocked at the beginning" );
 		toReturn.put( GREEN_THEME, "finish a classic game at least once" );
-		toReturn.put( DIGIMON_THEME, "score at least 10 points in time trial." );
-		
+		toReturn.put( DIGIMON_THEME, "score at least 20 points in time trial." );
+		toReturn.put( SILVER_THEME, "unlock all other themes." );
 		return toReturn;
 	}
 	
@@ -102,8 +110,10 @@ public class ThemeModel {
 	public void checkForUnlockedThemes(CardController cardController) {
 		if(GameModeModel.getInstance().isNormalGameMode())
 			unlock(GREEN_THEME);
-		if(GameModeModel.getInstance().isTimeTrialGameMode() && cardController.getFinalScore() >= 10 )
+		if(GameModeModel.getInstance().isTimeTrialGameMode() && cardController.getFinalScore() >= 20 )
 			unlock(DIGIMON_THEME);
+		if(unlockedThemes.size() == getAllThemes().length-1 )
+			unlock(SILVER_THEME);
 	}
 	
 	/**
@@ -136,7 +146,8 @@ public class ThemeModel {
 	 */
 	
 	private boolean saveTheme(String themeName, int isSelected) {
-
+		if(isUnlocked(themeName)) return true;
+		
 		SQLiteDatabase db = DatabaseHandler.getHandler().getWritableDatabase();
 		boolean isSuccessful = false;
 		ContentValues values = new ContentValues();

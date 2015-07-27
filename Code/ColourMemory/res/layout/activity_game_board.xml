@@ -6,7 +6,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
-	android:background="@color/orange_tang" >
+	android:background="@drawable/bg2" >
 
 	<LinearLayout
 		android:layout_width="match_parent"
@@ -18,14 +18,6 @@
 			android:layout_height="wrap_content"
 			android:layout_margin="@dimen/small_gap" >
 
-			<ImageView
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:layout_alignBottom="@+id/midLayout"
-				android:layout_alignParentLeft="true"
-				android:layout_alignParentTop="true"
-				android:contentDescription="@string/app_name"
-				android:src="@drawable/logo" />
 
 			<!-- Button
 				android:id="@+id/currentScoreButton"
@@ -72,11 +64,11 @@
 			<Button
 				android:id="@+id/scoresButton"
 				style="@style/buttonStyle"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
+				android:layout_width="120dp"
+				android:layout_height="40dp"
 				android:layout_alignParentRight="true"
 				android:layout_alignParentTop="true"
-				android:background="@drawable/beige_button"
+				android:background="@drawable/green_button"
 				android:onClick="showScores"
 				android:text="@string/scores_button" />
 		</RelativeLayout>

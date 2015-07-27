@@ -7,26 +7,38 @@
 	xmlns:tools="http://schemas.android.com/tools"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
-	android:background="@color/orange_tang"
+	android:background="@drawable/bg"
 	android:gravity="center_horizontal"
 	tools:context="thakur.rahul.colourmemory.MainActivity" >
-
+	
 	<ImageView
-		android:layout_width="match_parent"
-		android:layout_height="0dp"
-		android:layout_above="@+id/buttonsContainer"
-		android:layout_alignParentTop="true"
-		android:layout_marginTop="@dimen/big_gap"
-		android:contentDescription="@string/app_name"
-		android:scaleType="fitCenter"
-		android:src="@drawable/logo" />
-
+			android:id="@+id/hkuLogo"
+			android:layout_width="205dp"
+			android:layout_height="230dp"
+			android:layout_marginTop="10dp"
+			android:layout_alignParentTop="true"
+			android:layout_centerHorizontal="true"
+			android:contentDescription="@string/app_name"
+			android:scaleType="fitCenter"
+			android:src="@drawable/hku_logo" />
+	
+	<ImageView
+	    	android:id="@+id/logo"
+			android:layout_width="490dp"
+			android:layout_height="326dp"
+			android:layout_marginTop="25dp"
+			android:contentDescription="@string/app_name"
+			android:layout_below="@id/hkuLogo"
+			android:layout_centerHorizontal="true"
+			android:src="@drawable/logo2"/>
+    
+		
 	<LinearLayout
-		android:id="@id/buttonsContainer"
+		android:layout_below="@id/logo"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 		android:layout_alignParentBottom="true"
-		android:layout_marginBottom="@dimen/big_gap"
+		android:layout_marginBottom="30dp"
 		android:gravity="center"
 		android:orientation="vertical" >
 
@@ -35,7 +47,7 @@
 			style="@style/buttonStyle"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:background="@drawable/red_button"
+			android:background="@drawable/purple_button"
 			android:onClick="startGame"
 			android:text="@string/start_button" />
 		<Button
@@ -43,7 +55,8 @@
 			style="@style/buttonStyle"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:background="@drawable/red_button"
+			android:layout_marginTop="5dp"
+			android:background="@drawable/cyan_button"
 			android:onClick="startTimeTrial"
 			android:text="@string/time_trial_button" />
 		<Button
@@ -51,7 +64,8 @@
 			style="@style/buttonStyle"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:background="@drawable/red_button"
+			android:layout_marginTop="5dp"
+			android:background="@drawable/yellow_button"
 			android:onClick="openThemeShop"
 			android:text="@string/theme_shop_button" />
 		<Button
@@ -59,8 +73,8 @@
 			style="@style/buttonStyle"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:layout_marginTop="@dimen/small_gap"
-			android:background="@drawable/beige_button"
+			android:layout_marginTop="5dp"
+			android:background="@drawable/green_button"
 			android:onClick="showScores"
 			android:text="@string/scores_button" />
 
@@ -69,10 +83,19 @@
 			style="@style/buttonStyle"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:layout_marginTop="@dimen/small_gap"
-			android:background="@drawable/black_button"
+			android:layout_marginTop="5dp"
+			android:background="@drawable/black_button2"
 			android:onClick="closeApplication"
 			android:text="@string/exit_button" />
+		<Button
+			android:id="@+id/resetButton"
+			style="@style/buttonStyle"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="5dp"
+			android:background="@drawable/black_button2"
+			android:onClick="resetThemes"
+			android:text="@string/reset_button" />
 	</LinearLayout>
 
 	<FrameLayout

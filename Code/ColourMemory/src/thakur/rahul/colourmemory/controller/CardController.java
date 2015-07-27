@@ -35,6 +35,7 @@ public class CardController {
 	private GameModeModel gameMode;
 	
 	
+	private final int MAX_COMBO = 5;
 	public CardController(Activity activity, String card_prefix) {
 
 		this.activity = activity;
@@ -83,7 +84,7 @@ public class CardController {
 		ImageView[][] tk = new ImageView[2][2];
 		tk[0][1] = v;
 		tk[0][0] = cardViewMap.get(cardSwapMap.get(v.getId()));
-		new Thread(new AnimationController(activity,tk[0][0], tk[0][1] , false, null).setPreAnimatinDelay(500), "AnimationThread").start();
+		new Thread(new AnimationController(activity,tk[0][0], tk[0][1] , false, null).setPreAnimatinDelay(700), "AnimationThread").start();
 		
 		for( int i = 0; i < 4; i++ ) {
 			for( int j = 0; j < 4; j++ ) {
@@ -138,7 +139,7 @@ public class CardController {
 			
 			if (gameMode.isTimeTrialGameMode()) {
 				int timeToAdd = TimerModel.TIME_ADDED;
-				timeToAdd += Math.min(comboTracker, 5);
+				timeToAdd += Math.min(comboTracker, MAX_COMBO);
 				timeLeft.addTime(timeToAdd);
 			}
 		} else {
@@ -208,7 +209,7 @@ public class CardController {
 				for (int j = 0; j < 4; j++) {
 					String extra = "";
 					int rnd = randomiser();
-					if(card_prefix.startsWith("s")) {
+					if(card_prefix.startsWith("s_")) {
 						if( list[rnd-1] == 0 ) {
 							int rnd2 = randomGenerator.nextInt(2)+1;
 							extra = "_"+rnd2;
