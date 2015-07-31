@@ -37,4 +37,5 @@ https://raw.githubusercontent.com/rahul-rkt/ColorMemory/master/APK/ColorMemory.a
 
 ### Authors:
 **Janssen Marwin Go**
+
 **Rahul Kumar Thakur**
