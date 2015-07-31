@@ -36,6 +36,6 @@ https://raw.githubusercontent.com/rahul-rkt/ColorMemory/master/APK/ColorMemory.a
 - Initially, only 2 themes are unlocked. More themes can be unlocked by playing through the different game modes and achieving the certain conditionions needed to unlock them
 
 ### Authors:
-**Janssen Marwin Go**
+_Janssen Marwin Go_
 
-**Rahul Kumar Thakur**
+_Rahul Kumar Thakur_
