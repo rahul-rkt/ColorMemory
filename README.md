@@ -1,10 +1,13 @@
-<div style="display: block; margin: 0 auto;">
-![logo](https://raw.githubusercontent.com/rahul-rkt/ColorMemory/master/Design/logo.png)
-</div>
-<h1 style="font-size: 4.236em; border-bottom: none; margin-bottom: 0em !important; padding-bottom: 0em !important;">ColorMemory </h1><h6 style="font-size: 1.618em; font-style: italic; margin-top: 0em !important; padding-top: 0em !important; padding-left: 0.5em !important; border-bottom: 1px solid #eee">A card based puzzle game</h6>
+![logo](/Design/logo.png)
+# ColorMemory
+###### _A card based puzzle game_
+
+### Demo:
+```
+https://youtu.be/X0_SwQjkReI
+```
 
 ### Download:
-
 ```
 https://raw.githubusercontent.com/rahul-rkt/ColorMemory/master/APK/ColorMemory.apk
 ```
@@ -15,7 +18,7 @@ https://raw.githubusercontent.com/rahul-rkt/ColorMemory/master/APK/ColorMemory.a
 3. Copy the file into a folder of your choice in your device
 4. Using your device, find the apk file, click on it to install and you're done
 
-### How to Play:
+### Game Tutorial:
 ###### General Rules -
 - This is a traditional memory card game. The objective of the game is to match all the cards with their respective counterparts.
 - At every turn, the player needs to open a pair of cards.
