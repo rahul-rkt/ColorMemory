@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 **** Dimension Values
-**** @author rahulthakur
--->
+**** @author rahulthakur-->
 <resources>
 
 	<dimen name="grid_gap">2dp</dimen>
