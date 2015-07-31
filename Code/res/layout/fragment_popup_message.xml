@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+**** NewHighScoreFragment Layout File
+**** @author rahulthakur
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:background="@color/black_bright"
+	android:clickable="true"
+	android:gravity="center"
+	android:orientation="vertical"
+	android:soundEffectsEnabled="false" >
+
+	<TextView
+		android:id="@+id/popupMessage"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="@dimen/medium_gap"
+		android:layout_marginLeft="@dimen/small_gap"
+		android:layout_marginRight="@dimen/small_gap"
+		android:layout_marginTop="@dimen/medium_gap"
+		android:gravity="center"
+		android:singleLine="false"
+		android:textColor="@color/white_bright"
+		android:textSize="@dimen/medium_text" />
+
+	<Button
+		android:id="@+id/okayButton"
+		style="@style/buttonStyle"
+		android:layout_width="100dp"
+		android:layout_height="40dp"
+		android:layout_marginBottom="@dimen/medium_gap"
+		android:background="@drawable/green_button"
+		android:text="@string/ok" />
+
+</LinearLayout>

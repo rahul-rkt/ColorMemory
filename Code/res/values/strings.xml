@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+**** String Values
+**** @author rahulthakur
+-->
+<resources>
+
+	<string name="app_name">Color Memory</string>
+	<string name="start_button">Normal Game</string>
+	<string name="time_trial_button">Time Trial</string>
+	<string name="theme_shop_button">Theme Shop</string>
+	<string name="scores_button">High Scores</string>
+	<string name="exit_button">Quit</string>
+	<string name="reset_button">Reset Theme</string>
+	<string name="current_score">0</string>
+	<string name="time_left">0</string>
+	<string name="card">Card</string>
+	<string name="high_scores">High Scores</string>
+	<string name="congrats">Congratulations</string>
+	<string name="hint">Enter your name here..</string>
+	<string name="new_score_msg">You have a new High Score</string>
+	<string name="save">Save</string>
+	<string name="ok">OK</string>
+
+	<!-- Theme Names -->
+	<string name="colour_theme">colour_</string>
+	<string name="red_theme">red_</string>
+	<string name="digimon_theme">s_digimons_</string>
+	<string name="green_theme">green_</string>
+	<string name="silver_theme">silver_</string>
+
+	<!-- COLOURS -->
+
+	<color name="black">#2B303B</color>
+	<color name="black_bright">#65737E</color>
+	<color name="white">#C0C5CE</color>
+	<color name="white_bright">#EFF1F5</color>
+	<color name="red">#BF616A</color>
+	<color name="green">#A3BE8C</color>
+	<color name="blue">#8FA1B3</color>
+	<color name="yellow">#EBCB8B</color>
+	<color name="magenta">#B48EAD</color>
+	<color name="cyan">#96B5B4</color>
+
+	<string name="title_activity_theme_shop">ThemeShopActivity</string>
+
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+**** Dimension Values
+**** @author rahulthakur
+-->
+<resources>
+
+	<dimen name="grid_gap">2dp</dimen>
+	<dimen name="small_gap">10dp</dimen>
+	<dimen name="medium_gap">25dp</dimen>
+	<dimen name="big_gap">50dp</dimen>
+
+	<!-- ASSETS -->
+	<dimen name="hku_logo_dimen">50dp</dimen>
+	<dimen name="hku_logo_dimen_large">100dp</dimen>
+	<dimen name="hku_logo_dimen_xlarge">150dp</dimen>
+	<dimen name="logo_dimen">150dp</dimen>
+	<dimen name="logo_dimen_large">300dp</dimen>
+	<dimen name="logo_dimen_xlarge">450dp</dimen>
+
+	<!-- TEXT -->
+	<dimen name="large_text">25sp</dimen>
+	<dimen name="medium_text">15sp</dimen>
+
+</resources>
