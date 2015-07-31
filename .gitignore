@@ -4,8 +4,8 @@
 ._*
 Thumbs.db
 .git
-Code/ColourMemory/.project
-Code/ColourMemory/.settings
-Code/ColourMemory/bin/
+Code/.project
+Code/.settings
+Code/bin/
 *.classpath
 Code/ColourMemory/gen/

@@ -22,10 +22,10 @@ public class ThemeModel {
 		loadThemes();
 		//if nothing was loaded
 		if (unlockedThemes.size() == 0) {
-			unlockedThemes.add(DEFAULT_THEME);
-			unlockedThemes.add(RED_THEME);
 			saveTheme(DEFAULT_THEME, 1);
 			saveTheme(RED_THEME, 0);
+			unlockedThemes.add(DEFAULT_THEME);
+			unlockedThemes.add(RED_THEME);
 		}
 	}
 
@@ -34,6 +34,8 @@ public class ThemeModel {
 		unlockedThemes = new HashSet<String>();
 		unlockedThemes.add(DEFAULT_THEME);
 		unlockedThemes.add(RED_THEME);
+		
+		theme = DEFAULT_THEME;
 	}
 
 	public static ThemeModel getInstance() {
@@ -93,8 +95,8 @@ public class ThemeModel {
 	public void unlock(String theme) {
 
 		if ( !unlockedThemes.contains(theme)) {
-			unlockedThemes.add(theme);
 			saveTheme(theme, 0);
+			unlockedThemes.add(theme);
 		}
 	}
 

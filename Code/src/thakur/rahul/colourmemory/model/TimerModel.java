@@ -4,8 +4,10 @@ package thakur.rahul.colourmemory.model;
 public class TimerModel {
 
 	private static TimerModel singleton = new TimerModel();
-	public static final int TIME_ADDED = 3;
+	public static final int TIME_ADDED = 2;
 	public static final int STARTING_TIME = 25;
+	public static final int TIME_CAP = 40;
+	
 	private int time_left = 0;
 
 	private TimerModel() {
@@ -39,6 +41,7 @@ public class TimerModel {
 	public void addTime(int delta) {
 
 		time_left += delta;
+		time_left = Math.min( time_left, TIME_CAP );
 	}
 
 	public void decreaseTime() {
