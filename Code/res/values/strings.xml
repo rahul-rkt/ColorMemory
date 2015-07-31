@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 **** String Values
-**** @author rahulthakur
--->
+**** @author rahulthakur-->
 <resources>
 
 	<string name="app_name">Color Memory</string>
