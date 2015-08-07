@@ -12,6 +12,11 @@ https://youtu.be/X0_SwQjkReI
 https://raw.githubusercontent.com/rahul-rkt/ColorMemory/master/APK/ColorMemory.apk
 ```
 
+### Final Report:
+```
+https://raw.githubusercontent.com/rahul-rkt/ColorMemory/master/APK/ColorMemory.apk
+```
+
 ### Installation Guide:
 1. Download the APK file (link given above) into your computer
 2. Connect your android device to you computer
