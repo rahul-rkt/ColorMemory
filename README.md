@@ -14,7 +14,7 @@ https://raw.githubusercontent.com/rahul-rkt/ColorMemory/master/APK/ColorMemory.a
 
 ### Final Report:
 ```
-https://raw.githubusercontent.com/rahul-rkt/ColorMemory/master/APK/ColorMemory.apk
+https://github.com/rahul-rkt/ColorMemory/raw/master/Documentation/Group3%20-%20Final%20Report.pdf
 ```
 
 ### Installation Guide:
