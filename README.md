@@ -14,7 +14,7 @@ https://raw.githubusercontent.com/rahul-rkt/ColorMemory/master/APK/ColorMemory.a
 
 ### Final Report:
 ```
-https://github.com/rahul-rkt/ColorMemory/raw/master/Documentation/Group3%20-%20Final%20Report.pdf
+https://github.com/rahul-rkt/ColorMemory/raw/master/Documentation/Final%20Report.pdf
 ```
 
 ### Installation Guide:
@@ -38,7 +38,7 @@ https://github.com/rahul-rkt/ColorMemory/raw/master/Documentation/Group3%20-%20F
 
 ###### Theme Shop -
 - This is the page where the player can change their current card theme when playing the game
-- Initially, only 2 themes are unlocked. More themes can be unlocked by playing through the different game modes and achieving the certain conditionions needed to unlock them
+- Initially, only 2 themes are unlocked. More themes can be unlocked by playing through the different game modes and achieving the certain conditions needed to unlock them
 
 ### Authors:
 _Janssen Marwin Go_
